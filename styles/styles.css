@@ -1,0 +1,6 @@
+< !DOCTYPE html > <html lang="en" > <head > <meta charset="UTF-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title > WDD130 | Home | Alfredo Cassanje</title > <meta name="description" content="Alfredo Cassanje WDD130 course homepage, learning web development and HTML and CSS." > <meta name="author" content="Alfredo Cassanje" > <link rel="stylesheet" href="styles/styles.css" > </head > <body > <header > <h1 > Alfredo Cassanje | WDD130</h1 > </header > <main > <img src="images/profile.jpg" alt="My profile picture" > <p > Hello ! My name is Alfredo Cassanje. I am from Angola and I am currently studying web development. I enjoy teaching,
+learning new skills,
+and helping others understand complex ideas in a simple way. </p > </main > <aside > <h2 > Angola</h2 > <img src="images/angola.jpg" alt="Angola landscape" > <p > Angola is a country located in Southern Africa. It is known for its rich culture,
+natural resources,
+and beautiful landscapes. The capital city is Luanda,
+and the country continues to grow economically and socially. </p > </aside > <footer > <p > © 2026 | Alfredo Cassanje | Angola</p > </footer > </body > </html >
