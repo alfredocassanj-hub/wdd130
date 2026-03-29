@@ -8,6 +8,9 @@ body {
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: space;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .flex-item {
