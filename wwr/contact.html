@@ -47,29 +47,40 @@
 
             <!-- FORM -->
             <form>
+                <form>
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
 
-                <p>Message Purpose</p>
+                    <p>Message Purpose</p>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general"> General
+                        Inquiry
+                    </label>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation
+                        Question
+                    </label>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
 
-                <label><input type="radio" name="purpose"> General Inquiry</label>
-                <label><input type="radio" name="purpose"> Reservation Question</label>
-                <label><input type="radio" name="purpose"> Website Suggestion</label>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label for="message">Message</label>
-                <textarea id="message" rows="4"></textarea>
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
 
-                <label>
-                    <input type="checkbox">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                    <button type="submit">Get in Touch!</button>
 
-                <button type="submit">Get in Touch!</button>
-
+                </form>
             </form>
 
         </section>
