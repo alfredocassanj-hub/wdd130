@@ -141,13 +141,13 @@ nav a {
     font-weight: bold;
 }
 
-/* ====== CONTACT INFO ====== */
+/* ====== CONTACT INFO ===== */
 .contact-info {
     text-align: center;
     margin: 20px 0;
 }
 
-/* ====== CONTACT LAYOUT ======= */
+/* ====== CONTACT LAYOUT ====== */
 .contact-container {
     display: flex;
     justify-content: center;
