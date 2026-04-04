@@ -6,14 +6,14 @@
     --white: #ffffff;
 }
 
-/* ====== RESET ======= */
+/* ====== RESET ====== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ====== BODY ======= */
+/* ====== BODY ====== */
 body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
@@ -27,7 +27,7 @@ footer {
     margin: 0 auto;
 }
 
-/* ====== HEADER (GRID) ====== */
+/* ====== HEADER ====== */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -40,7 +40,7 @@ header img {
     width: 120px;
 }
 
-/* ====== NAV (FLEX) ====== */
+/* ====== NAV ====== */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -55,10 +55,9 @@ nav a {
     color: black;
 }
 
-/* ====== HERO ====== */
+/* ====== HERO (ABOUT PAGE) ====== */
 .hero {
     position: relative;
-    border: 1px solid #333;
     margin: 20px 0;
 }
 
@@ -68,7 +67,6 @@ nav a {
     object-fit: cover;
 }
 
-/* TÍTULO SOBRE A IMAGEM */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -76,20 +74,17 @@ nav a {
     text-align: center;
     background: rgba(255, 255, 255, 0.7);
     padding: 10px;
-    font-size: 2rem;
 }
 
-/* ARTICLE SOBRE A IMAGEM */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
     background: var(--white);
+    padding: 15px;
     display: flex;
     align-items: center;
-    padding: 15px;
-    border: 1px solid #333;
 }
 
 .hero article img {
@@ -99,10 +94,8 @@ nav a {
 
 /* ====== HISTORY ====== */
 .history {
-    border: 1px solid #333;
-    padding: 20px;
-    margin: 20px 0;
     text-align: center;
+    margin: 20px 0;
 }
 
 .history-content {
@@ -123,17 +116,14 @@ nav a {
 
 /* ====== ADVENTURE ====== */
 .adventure {
-    border: 1px solid #333;
-    padding: 20px;
-    margin: 20px 0;
     text-align: center;
+    margin: 20px 0;
 }
 
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    gap: 10px;
 }
 
 .adventure-gallery figure {
@@ -147,6 +137,78 @@ nav a {
 }
 
 .adventure-gallery figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* ====== CONTACT INFO ====== */
+.contact-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ====== CONTACT LAYOUT ====== */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+/* MAP */
+.map iframe {
+    width: 350px;
+    height: 250px;
+    border: none;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    border: 1px solid #333;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5a4bd1;
+}
+
+/* ====== EMPLOYEES ====== */
+.employees {
+    text-align: center;
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.employees figure {
+    display: inline-block;
+    margin: 15px;
+}
+
+.employees img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.employees figcaption {
     margin-top: 5px;
     font-weight: bold;
 }
