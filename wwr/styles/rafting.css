@@ -19,7 +19,7 @@ body {
     color: var(--text-color);
 }
 
-/* ====== CONTAINER ======= */
+/* ====== CONTAINER ====== */
 header,
 main,
 footer {
@@ -55,7 +55,7 @@ nav a {
     color: black;
 }
 
-/* ====== HERO (ABOUT PAGE) ====== */
+/* ====== HERO ====== */
 .hero {
     position: relative;
     margin: 20px 0;
@@ -127,13 +127,6 @@ nav a {
 .adventures figure {
     display: inline-block;
     margin: 10px;
-}
-
-.adventures h2 {
-    margin-bottom: 20px;
-}
-
-.adventures figure {
     text-align: center;
 }
 
@@ -212,13 +205,6 @@ form button:hover {
 .employees figure {
     display: inline-block;
     margin: 10px;
-}
-
-.employees h2 {
-    margin-bottom: 15px;
-}
-
-.employees figure {
     text-align: center;
 }
 
@@ -227,7 +213,6 @@ form button:hover {
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    /* formato circular */
 }
 
 .employees figcaption {
