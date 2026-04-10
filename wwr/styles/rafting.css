@@ -114,30 +114,38 @@ nav a {
     line-height: 1.6;
 }
 
-/* ====== ADVENTURE ====== */
-.adventure {
+/* ====== ADVENTURES ====== */
+.adventures {
     text-align: center;
     margin: 20px 0;
 }
 
-.adventure-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.adventures h2 {
+    margin-bottom: 20px;
 }
 
-.adventure-gallery figure {
+.adventures figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+.adventures h2 {
+    margin-bottom: 20px;
+}
+
+.adventures figure {
     text-align: center;
 }
 
-.adventure-gallery img {
-    width: 120px;
-    height: 80px;
+.adventures img {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    border-radius: 6px;
 }
 
-.adventure-gallery figcaption {
-    margin-top: 5px;
+.adventures figcaption {
+    margin-top: 8px;
     font-weight: bold;
 }
 
@@ -197,15 +205,29 @@ form button:hover {
     margin: 20px 0;
 }
 
+.employees h2 {
+    margin-bottom: 20px;
+}
+
 .employees figure {
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
+}
+
+.employees h2 {
+    margin-bottom: 15px;
+}
+
+.employees figure {
+    text-align: center;
 }
 
 .employees img {
     width: 120px;
     height: 120px;
     object-fit: cover;
+    border-radius: 50%;
+    /* formato circular */
 }
 
 .employees figcaption {
