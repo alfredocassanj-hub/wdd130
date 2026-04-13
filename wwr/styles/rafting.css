@@ -1,9 +1,7 @@
-/* ================= VARIABLES ================= */
 :root {
     --primary-color: #055a05;
     --secondary-color: #0077cc;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
 
     --heading-font: "Times New Roman", serif;
     --body-font: Arial, sans-serif;
@@ -30,7 +28,7 @@ footer {
     margin: 0 auto;
 }
 
-/* ================= HEADER (GRID) ================= */
+/* ================= HEADER ================= */
 header {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -42,7 +40,7 @@ header {
     width: 120px;
 }
 
-/* ================= NAV (FLEX) ================= */
+/* ================= NAV ================= */
 nav ul {
     list-style: none;
     display: flex;
@@ -60,7 +58,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* ================= HEADINGS ================ */
+/* ================= HEADINGS ================= */
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -108,13 +106,11 @@ h2 {
     padding: 20px;
 }
 
-/* 👇 TÍTULO EM CIMA */
 .history h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* 👇 GRID SÓ PARA CONTEÚDO */
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -141,12 +137,10 @@ h2 {
     font-weight: bold;
 }
 
-/* caixa das imagens */
 .adventure-box {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-
     border: 2px solid var(--secondary-color);
     padding: 15px;
     margin-top: 10px;
@@ -167,21 +161,19 @@ h2 {
     margin-top: 5px;
 }
 
+/* ================= FOOTER ================= */
 footer {
     display: flex;
     justify-content: space-between;
-    /* 👈 esquerda e direita */
     align-items: center;
     padding: 20px;
 }
 
-/* redes sociais à direita */
 .socialmedia {
     display: flex;
     gap: 10px;
 }
 
-/* tamanho do ícones */
 .socialmedia img {
     width: 30px;
     height: 30px;
