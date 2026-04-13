@@ -60,7 +60,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* ================= HEADINGS ================= */
+/* ================= HEADINGS ================ */
 h1,
 h2 {
     font-family: var(--heading-font);
