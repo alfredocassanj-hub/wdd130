@@ -4,33 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-      content="Contact White Water Rafting for reservations, questions, and adventure planning.">
+      content="Contact White Water Rafting for inquiries, reservations, and suggestions.">
     <meta name="author" content="Alfredo Albino António Cassanje">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-
-    <!-- CSS específico para About e Contact -->
-    <link rel="stylesheet" href="rafting-about-contact.css">
+    <title>Contact Us | White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header>
-        <img src="images/logo.png" alt="Rafting Logo">
-
+        <img src="images/logo.png" alt="Rafting Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
     <main>
-
         <!-- COMPANY INFO -->
-        <section class="contact-info">
+        <section class="company-info">
             <h1>White Water Rafting Company</h1>
             <p>123 Main River Street</p>
             <p>Kolob, California</p>
@@ -39,77 +34,71 @@
         </section>
 
         <!-- MAP + FORM -->
-        <section class="contact-container">
-
-            <!-- MAP -->
+        <section class="contact-layout">
             <div class="map">
-                <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"></iframe>
+                <iframe
+                  src="https://maps.google.com/maps?q=California&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             </div>
 
-            <!-- FORM -->
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
 
-                <p>Message Purpose</p>
-                <label for="general">
-                    <input type="radio" id="general" name="purpose" value="general"> General Inquiry
-                </label>
-                <label for="reservation">
-                    <input type="radio" id="reservation" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
-                <label for="suggestion">
-                    <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website
-                    Suggestion
-                </label>
+                    <p><strong>Message Purpose</strong></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="purpose" value="general" required> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website
+                            Suggestion</label>
+                    </div>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
 
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                    <div class="newsletter">
+                        <label><input type="checkbox" name="newsletter"> Please subscribe me to the
+                            monthly newsletter</label>
+                    </div>
 
-                <button type="submit">Get in Touch!</button>
-            </form>
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
         </section>
 
-        <!-- EMPLOYEES -->
-        <section class="employees">
+        <!-- EMPLOYEES BOX -->
+        <section class="employees-box">
             <h2>We Are Here to Serve You</h2>
-
-            <figure>
-                <img src="images/employees1.jpg" alt="River Guide">
-                <figcaption>John – River Guide</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employees2.jpg" alt="Manager">
-                <figcaption>Sarah – Manager</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employees3.jpg" alt="Instructor">
-                <figcaption>Mike – Instructor</figcaption>
-            </figure>
+            <div class="employees">
+                <div class="employee-profile">
+                    <img src="images/employees1.jpg" alt="John - Manager">
+                    <p>John – Manager</p>
+                </div>
+                <div class="employee-profile">
+                    <img src="images/employees2.jpg" alt="Alfredo - River Guide">
+                    <p>Anna – River Guide</p>
+                </div>
+                <div class="employee-profile">
+                    <img src="images/employees3.jpg" alt="Mike - Support Staff">
+                    <p>Mike – Support Staff</p>
+                </div>
+            </div>
         </section>
-
     </main>
 
     <!-- FOOTER -->
     <footer>
         <p>© 2026 White Water Rafting | Alfredo Cassanje</p>
-
-        <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
-            <a href="#"><img src="images/tiktok.jpg" alt="TikTok"></a>
-        </nav>
+        <div class="social-icons">
+            <img src="images/facebook.jpg" alt="Facebook">
+            <img src="images/instagram.jpg" alt="Instagram">
+            <img src="images/twitter1.png" alt="Twitter">
+        </div>
     </footer>
 
 </body>
