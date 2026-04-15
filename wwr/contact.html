@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-      content="Contact White Water Rafting for inquiries, reservations, and suggestions.">
-    <meta name="author" content="Alfredo Albino António Cassanje">
+      content="Contact White Water Rafting for reservations, questions, or suggestions.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting</title>
+
+    <!-- IMPORTANTE: usa o mesmo CSS -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
     <header>
-        <img src="images/logo.png" alt="Rafting Logo" class="logo">
+        <img src="images/logo.png" alt="Rafting Logo">
+
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html" class="active">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
+
         <!-- COMPANY INFO -->
         <section class="company-info">
             <h1>White Water Rafting Company</h1>
@@ -33,71 +36,76 @@
             <p>info@whitewater.com</p>
         </section>
 
-        <!-- MAP + FORM -->
-        <section class="contact-layout">
+        <!-- CONTACT AREA -->
+        <section class="contact-container">
+
+            <!-- MAP -->
             <div class="map">
-                <iframe
-                  src="https://maps.google.com/maps?q=California&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                <iframe src="https://www.google.com/maps?q=Kolob,Utah&output=embed" loading="lazy">
+                </iframe>
             </div>
 
-            <div class="contact-form">
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <!-- FORM -->
+            <form class="contact-form">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
 
-                    <p><strong>Message Purpose</strong></p>
-                    <div class="radio-group">
-                        <label><input type="radio" name="purpose" value="general" required> General
-                            Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation
-                            Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website
-                            Suggestion</label>
-                    </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
+                <p>Message Purpose</p>
 
-                    <div class="newsletter">
-                        <label><input type="checkbox" name="newsletter"> Please subscribe me to the
-                            monthly newsletter</label>
-                    </div>
+                <label><input type="radio" name="purpose" required> General Inquiry</label>
+                <label><input type="radio" name="purpose"> Reservation Question</label>
+                <label><input type="radio" name="purpose"> Website Suggestion</label>
 
-                    <button type="submit">Get in Touch!</button>
-                </form>
-            </div>
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+
+            </form>
         </section>
 
-        <!-- EMPLOYEES BOX ---->
-        <section class="employees-box">
+        <!-- TEAM -->
+        <section class="team">
             <h2>We Are Here to Serve You</h2>
-            <div class="employees">
-                <div class="employee-profile">
-                    <img src="images/employees1.jpg" alt="John - Manager">
-                    <p>John – Manager</p>
-                </div>
-                <div class="employee-profile">
-                    <img src="images/employees2.jpg" alt="Alfredo - River Guide">
-                    <p>Anna – River Guide</p>
-                </div>
-                <div class="employee-profile">
-                    <img src="images/employees3.jpg" alt="Mike - Support Staff">
-                    <p>Mike – Support Staff</p>
-                </div>
+
+            <div class="team-container">
+
+                <figure>
+                    <img src="images/employees1.jpg" alt="Manager">
+                    <figcaption>John Smith - Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employees2.jpg" alt="Guide">
+                    <figcaption>Mary Johnson - River Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employees3.jpg" alt="Support">
+                    <figcaption>David Lee - Support Staff</figcaption>
+                </figure>
+
             </div>
         </section>
+
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2026 White Water Rafting | Alfredo Cassanje</p>
-        <div class="social-icons">
-            <img src="images/facebook.jpg" alt="Facebook">
-            <img src="images/instagram.jpg" alt="Instagram">
-            <img src="images/twitter1.png" alt="Twitter">
+        <p>© 2026 White Water Rafting - Alfredo Cassanje</p>
+
+        <div class="social">
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
 
