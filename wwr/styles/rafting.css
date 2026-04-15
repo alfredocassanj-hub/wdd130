@@ -134,15 +134,28 @@ footer {
     align-items: center;
 }
 
-/* redes sociais alinhadas */
-.social {
+/* redes sociais */
+.socialmedia {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-/* ícones pequenos */
-.social img {
-    width: 25px;
-    height: 25px;
+/* links */
+.socialmedia a {
+    display: flex;
+    align-items: center;
+}
+
+/* ícones pequenos (CORRETO AGORA) */
+.socialmedia img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* efeito hover */
+.socialmedia img:hover {
+    transform: scale(1.2);
 }
