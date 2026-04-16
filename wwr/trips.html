@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-      content="Discover our rafting trips. Choose your adventure and explore the best rivers.">
-    <meta name="author" content="Alfredo Albino António Cassanje">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips | White Water Rafting</title>
-
-    <!-- CSS específico para Home e Trips -->
-    <link rel="stylesheet" href="rafting-home-trips.css">
+    <title>Dry Oar | Trips</title>
+    <meta name="description" content="Dry Oar Rafting - Explore our rafting trips and adventures.">
+    <link rel="stylesheet" href="rafting.css">
 </head>
 
 <body>
-
     <!-- HEADER -->
-    <header>
-        <img src="images/logo.png" alt="Rafting Logo">
+    <header class="main-header">
+        <div class="logo">Dry Oar</div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -26,79 +21,83 @@
         </nav>
     </header>
 
+    <!-- TRIPS CONTENT -->
     <main>
+        <h1>Our Rafting Trips</h1>
 
-        <!-- CTA SECTION -->
-        <section class="cta-section">
-            <div class="cta-container">
-                <div class="cta-text">
-                    <h1>Plan Your Adventure</h1>
-                    <p>Contact us today to book your trip!</p>
-                    <a href="contact.html" class="btn">Contact Us</a>
-                </div>
-            </div>
+        <section class="trip">
+            <img src="images/trip1.jpg" alt="River Rapids">
+            <h2>River Rapids</h2>
+            <p>3 hours of fun on beginner-friendly rapids. Perfect for families and first-timers.
+            </p>
         </section>
 
-        <!-- TRIPS GRID -->
-        <section class="trips">
-            <div class="trip-card">
-                <img src="images/trip1.jpg" alt="Beginner Trip">
-                <h3>Beginner Rapids</h3>
-                <p>Perfect for beginners. Calm waters and guided experience.</p>
-            </div>
-
-            <div class="trip-card">
-                <img src="images/trip2.jpg" alt="Intermediate Trip">
-                <h3>Intermediate Adventure</h3>
-                <p>More exciting rapids for those seeking a challenge.</p>
-            </div>
-
-            <div class="trip-card">
-                <img src="images/trip3.jpg" alt="Advanced Trip">
-                <h3>Extreme Rapids</h3>
-                <p>For experienced rafters. Fast currents and high adrenaline.</p>
-            </div>
+        <section class="trip">
+            <img src="images/trip2.jpg" alt="Mountain Adventure">
+            <h2>Mountain Adventure</h2>
+            <p>A full-day experience combining rafting and hiking in stunning mountain scenery.</p>
         </section>
 
-        <!-- TABLE -->
-        <section class="table-section">
-            <h2>Available Trips</h2>
+        <section class="trip">
+            <img src="images/trip3.jpg" alt="Extreme Canyon">
+            <h2>Extreme Canyon</h2>
+            <p>Two days of intense rafting through challenging canyon rapids. For advanced
+                adventurers.</p>
+        </section>
 
-            <table>
+        <!-- TRIPS TABLE -->
+        <h2>Trip Summary</h2>
+        <table>
+            <thead>
                 <tr>
                     <th>Trip</th>
-                    <th>Level</th>
                     <th>Duration</th>
+                    <th>Difficulty</th>
                     <th>Price</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td>Beginner Rapids</td>
-                    <td>Easy</td>
-                    <td>2 Hours</td>
+                    <td>River Rapids</td>
+                    <td>3 hours</td>
+                    <td>Beginner</td>
                     <td>$50</td>
                 </tr>
                 <tr>
-                    <td>Intermediate Adventure</td>
-                    <td>Medium</td>
-                    <td>4 Hours</td>
-                    <td>$100</td>
+                    <td>Mountain Adventure</td>
+                    <td>1 day</td>
+                    <td>Intermediate</td>
+                    <td>$120</td>
                 </tr>
                 <tr>
-                    <td>Extreme Rapids</td>
-                    <td>Hard</td>
-                    <td>Full Day</td>
-                    <td>$180</td>
+                    <td>Extreme Canyon</td>
+                    <td>2 days</td>
+                    <td>Advanced</td>
+                    <td>$250</td>
                 </tr>
-            </table>
-        </section>
+            </tbody>
+        </table>
 
+        <!-- CALL TO ACTION -->
+        <div class="cta">
+            <p>Ready to book your adventure?</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 White Water Rafting | Alfredo Albino António Cassanje</p>
+        <p>Dry Oar © 2026 - Alfredo Cassanje</p>
+        <nav>
+            <a href="site-plan.html">Site Plan</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="social">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/instagram.png" alt="Instagram">
+        </div>
     </footer>
-
 </body>
 
 </html>

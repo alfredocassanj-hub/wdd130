@@ -1,161 +1,172 @@
-/* ================= CONTACT PAGE ================= */
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* HEADER */
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
 header {
-    background-color: #0077be;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
 }
 
-/* LOGO */
-header img {
-    height: 60px;
+.logo {
+    width: 120px;
 }
 
-/* MENU (CORRIGIDO - UMA SÓ VEZ) */
-nav {
+nav ul {
     display: flex;
+    justify-content: flex-end;
+    list-style: none;
     gap: 20px;
-    align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #003049;
     font-weight: bold;
-    padding: 8px 12px;
 }
 
 nav a:hover {
-    background-color: white;
-    color: #0077be;
-    border-radius: 5px;
+    color: #d62828;
 }
 
-/* ================= COMPANY INFO ================= */
-.company-info {
-    text-align: center;
-    margin: 20px 0;
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
 }
 
-/* ================= CONTACT AREA ================= */
-.contact-container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-}
-
-.map {
-    flex: 1;
-}
-
-.map iframe {
+.hero img {
     width: 100%;
-    height: 300px;
-    border: none;
+    display: block;
 }
 
-.contact-form {
-    flex: 1;
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    font-size: 2rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
+.hero article img {
+    width: 150px;
+    border-radius: 10px;
 }
 
-.contact-form textarea {
-    height: 120px;
-    resize: none;
+.hero article p {
+    font-size: 1rem;
 }
 
-.checkbox {
-    display: flex;
-    gap: 5px;
+/* ===== HISTORY ===== */
+.history {
+    padding: 40px;
+    background-color: white;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003049;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 20px;
     align-items: center;
 }
 
-.contact-form button {
-    padding: 10px;
-    background-color: #0077be;
-    color: white;
-    border: none;
-    cursor: pointer;
+.history-grid img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.contact-form button:hover {
-    background-color: #005fa3;
+/* ===== ADVENTURES ===== */
+.adventures {
+    padding: 40px;
+    background-color: #eaeaea;
 }
 
-/* ================= TEAM SECTION ================= */
-.team {
-    border: 2px solid #0077be;
-    /* quadrado ao redor do título + conteúdo */
-    margin: 30px;
-    padding: 20px;
+.title-bar {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003049;
+}
+
+.adventure-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.adventure-box figure {
+    flex: 1;
+    min-width: 180px;
     text-align: center;
 }
 
-.team-container {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 20px;
+.adventure-box img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-/* cada employee dentro de um quadrado */
-.team-container figure {
-    border: 2px solid #0077be;
-    padding: 15px;
-    width: 150px;
-    background-color: white;
+.adventure-box figcaption {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-.team-container img {
-    width: 100px;
-    height: 100px;
+.adventure-box img {
+    width: 100%;
+    height: 180px;
+    /* força todas a terem mesma altura */
     object-fit: cover;
+    /* corta a imagem sem distorcer */
+    border-radius: 10px;
 }
 
-/* ================= FOOTER ================= */
+/* ===== FOOTER ===== */
 footer {
-    background-color: #0077be;
-    color: white;
-    padding: 15px 30px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
 }
 
-/* redes sociais */
 .socialmedia {
     display: flex;
-    gap: 15px;
-    align-items: center;
+    gap: 10px;
 }
 
-/* links */
-.socialmedia a {
-    display: flex;
-    align-items: center;
-}
-
-/* ícones pequenos (CORRETO  AGORA) */
 .socialmedia img {
-    width: 20px;
-    height: 20px;
-    display: block;
-    transition: 0.3s;
-}
-
-/* efeito hover */
-.socialmedia img:hover {
-    transform: scale(1.2);
+    width: 30px;
 }

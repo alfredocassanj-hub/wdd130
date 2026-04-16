@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-      content="Experience thrilling white water rafting adventures with our expert guides.">
-    <meta name="author" content="Alfredo Albino António Cassanje">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | White Water Rafting</title>
-
-    <!-- CSS específico para Home e Trips -->
-    <link rel="stylesheet" href="rafting-home-trips.css">
+    <title>Dry Oar | Home</title>
+    <meta name="description"
+      content="Dry Oar Rafting - Adventure trips, camping, and river rafting experiences.">
+    <link rel="stylesheet" href="rafting.css">
 </head>
 
 <body>
-
     <!-- HEADER -->
-    <header>
-        <img src="images/logo.png" alt="Rafting Logo">
+    <header class="main-header">
+        <div class="logo">Dry Oar</div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -26,71 +22,61 @@
         </nav>
     </header>
 
-    <main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Have An Adventure</h1>
+            <p>Make Memories with Dry Oar</p>
+            <a href="trips.html" class="btn">Book Now</a>
+        </div>
+    </section>
 
-        <!-- HERO -->
-        <section class="hero">
-            <img src="images/hero1.jpg" alt="Rafting Adventure">
-            <div class="hero-content">
-                <h1>Have An Adventure</h1>
-                <a href="trips.html" class="btn">Book Now</a>
-            </div>
-        </section>
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Sign Up for Our Newsletter</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <!-- FEATURES (3 COLUNAS) -->
-        <section class="features">
-            <div>
-                <img src="images/river.jpg" alt="Rivers">
-                <h3>Rivers</h3>
-            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-            <div>
-                <img src="images/camping.jpg" alt="Camping">
-                <h3>Camping</h3>
-            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
 
-            <div>
-                <img src="images/rapids.jpg" alt="Rapids">
-                <h3>Rapids</h3>
-            </div>
-        </section>
-
-        <!-- CTA SECTION -->
-        <section class="cta-section">
-            <div class="cta-container">
-                <img src="images/mountain.jpg" alt="Nature landscape">
-                <div class="cta-text">
-                    <h2>More Than Just The Thrill</h2>
-                    <p>
-                        Enjoy breathtaking scenery and unforgettable experiences in nature.
-                    </p>
-                    <a href="trips.html" class="btn">Join Us</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- NEWSLETTER -->
-        <section class="newsletter">
-            <h2>Subscribe to our Newsletter</h2>
-
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit">Subscribe Now</button>
-            </form>
-        </section>
-
-    </main>
+    <!-- GRID CONTENT -->
+    <section class="features">
+        <div class="feature">
+            <img src="images/river.jpg" alt="River">
+            <h3>Rivers</h3>
+            <p>Explore calm and scenic rivers perfect for beginners.</p>
+        </div>
+        <div class="feature">
+            <img src="images/camping.jpg" alt="Camping">
+            <h3>Camping</h3>
+            <p>Enjoy overnight camping in breathtaking natural settings.</p>
+        </div>
+        <div class="feature">
+            <img src="images/rapids.jpg" alt="Rapids">
+            <h3>Rapids</h3>
+            <p>Challenge yourself with thrilling white-water rapids.</p>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 White Water Rafting | Alfredo Albino António Cassanje</p>
+        <p>Dry Oar © 2026 - Alfredo Cassanje</p>
+        <nav>
+            <a href="site-plan.html">Site Plan</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="social">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/instagram.png" alt="Instagram">
+        </div>
     </footer>
-
 </body>
 
 </html>
