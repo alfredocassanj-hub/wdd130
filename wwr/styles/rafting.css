@@ -149,7 +149,7 @@ nav a:hover {
     height: 180px;
     /* força todas a terem mesma altura */
     object-fit: cover;
-    /* corta a imagem sem distorcer */
+    /* corta a imagem sems distorcer */
     border-radius: 10px;
 }
 
