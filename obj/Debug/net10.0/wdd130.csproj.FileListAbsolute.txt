@@ -1,0 +1,15 @@
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\bin\Debug\net10.0\wdd130.exe
+C:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\bin\Debug\net10.0\wdd130.deps.json
+C:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\bin\Debug\net10.0\wdd130.runtimeconfig.json
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\bin\Debug\net10.0\wdd130.dll
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\bin\Debug\net10.0\wdd130.pdb
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.AssemblyInfoInputs.cache
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.AssemblyInfo.cs
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.csproj.CoreCompileInputs.cache
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.sourcelink.json
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.dll
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\refint\wdd130.dll
+c:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.pdb
+C:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\wdd130.genruntimeconfig.cache
+C:\Users\Lenovo\OneDrive\Documents\GitHub\wdd130\obj\Debug\net10.0\ref\wdd130.dll
