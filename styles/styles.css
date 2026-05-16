@@ -1,82 +1,94 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Isto é um comentário bosS */
-header {
-    background-color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
     padding: 1rem;
 }
 
+/* NAV */
 nav {
-    display: flex;
-    justify-content: space-around;
     background-color: #333;
     padding: 1rem;
+    text-align: center;
 }
 
 nav a {
     color: white;
-    padding: 0.5rem;
-    display: block;
     text-decoration: none;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
 }
 
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* MAIN */
 main {
     max-width: 800px;
     margin: 1rem auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #000;
-    padding: 2px;
-    box-shadow: 0 0 10px gray;
-}
-
+/* TITLE */
 h1 {
     color: #003366;
     margin-bottom: 1rem;
 }
 
-p {
-    padding: 0;
-    margin-top: 1rem;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid #000;
-    padding: 1rem;
-    background-color: #eeeeee;
-    color: #333333;
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
+/* MAIN IMAGE */
+main img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin-top: 1rem;
-}
-
-aside h2 {
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
     margin-bottom: 1rem;
 }
 
+/* ASIDE */
+aside {
+    width: 300px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #e9f0f5;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ASIDE IMAGE */
+aside img {
+    width: 200px;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+/* PARAGRAPHS */
+p {
+    padding: 0.5rem 0;
+}
+
+/* FOOTER */
 footer {
     margin-top: 1rem;
     border-top: 1px solid #000;
     text-align: center;
-    padding: 1rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
 }
