@@ -1,28 +1,32 @@
+/* Variáveis globais */
 :root {
-    --primary-color: #055a05;
-    /* verde floresta */
+    --primary-color: #006994;
+    /* azul oceano */
     --secondary-color: #f4a261;
     /* areia quente */
     --accent1-color: #264653;
-    /* azul ardósia */
+    /* azul ardósia escuro */
     --accent2-color: #e9c46a;
     /* amarelo dourado */
-    --heading-font: "Times New Roman", Georgia, serif;
+    --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #fff;
 }
 
+/* Limite de largura */
 header,
 main,
 footer {
@@ -30,32 +34,14 @@ footer {
     margin: 0 auto;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-}
-
-header img {
-    height: 60px;
-}
-
-nav a {
-    margin: 0 12px;
-    color: var(--accent2-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* Cabeçalhos */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Margens básicas */
 nav,
 p,
 section,
@@ -64,56 +50,63 @@ article {
     padding: 8px;
 }
 
+/* Links sociais */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
 }
 
 .hero img {
     display: block;
-    width: 50px;
+    width: 100%;
     height: auto;
 }
 
+/* Título sobreposto */
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100px;
+    width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
 }
 
+/* Article overlay */
 .hero article {
-    position: relative;
+    position: absolute;
     bottom: 20px;
     left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 12px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
+/* Imagem dentro do article */
 .hero article img {
     float: right;
     width: 125px;
     margin: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Galeria Adventure Awaits */
+.about-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about-gallery img {
+    flex: 1 1 150px;
+    max-width: 100%;
+    height: auto;
     border-radius: 6px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-footer {
-    background-color: var(--secondary-color);
-    text-align: center;
-    padding: 16px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-    margin: 0 8px;
-}
-
-.socialmedia img {
-    width: 32px;
-    height: 32px;
 }
