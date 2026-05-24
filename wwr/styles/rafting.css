@@ -136,14 +136,14 @@ article {
     /* espaço uniforme entre imagens */
 }
 
-/* Imagens padronizadas */
+/* Imagens padronizada */
 .about-gallery img {
     width: 150px;
     /* largura fixa */
     height: 100px;
     /* altura fixa */
     object-fit: cover;
-    /* corta proporcionalmente sem distorcer */
+    /* corta proporcionalmentes sem distorcer */
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
