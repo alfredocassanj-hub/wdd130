@@ -41,6 +41,12 @@ h2 {
     color: var(--primary-color);
 }
 
+/* Centralizar títulos das seções */
+section h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
 /* Margens básicas */
 nav,
 p,
@@ -74,7 +80,7 @@ article {
     height: auto;
 }
 
-/* Título sobrepostos */
+/* Título sobreposto */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -86,7 +92,7 @@ article {
     color: #fff;
 }
 
-/* Article overlay1 */
+/* Article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -102,29 +108,38 @@ article {
     width: 125px;
     margin: 8px;
     border-radius: 4px;
-    box-shadow: 4 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Quadro para Adventure */
 .adventure-box {
     border: 2px solid var(--secondary-color);
-    padding: 6px;
-    margin-top: 0px;
+    padding: 12px;
+    margin-top: 16px;
     border-radius: 8px;
     background-color: #fdfdfd;
     /* leve contraste */
 }
 
-/* Galeria Adventure Awaits responsiva */
+/* Galeria Adventure Awaits em linha horizontal */
 .about-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    /* impede quebra para baixo */
+    justify-content: center;
+    /* centraliza na largura */
+    gap: 8px;
+    /* espaço uniforme entre imagens */
 }
 
+/* Imagens padronizadas */
 .about-gallery img {
     width: 150px;
-    height: auto;
+    /* largura fixa */
+    height: 100px;
+    /* altura fixa */
+    object-fit: cover;
+    /* corta proporcionalmente sem distorcer */
     border-radius: 6px;
-    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
