@@ -55,6 +55,14 @@ article {
     text-decoration: none;
 }
 
+/* Ícones sociais pequenos */
+.socialmedia img {
+    width: 24px;
+    height: 24px;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -94,19 +102,29 @@ article {
     width: 125px;
     margin: 8px;
     border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 4 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Galeria Adventure Awaits */
+/* Quadro para Adventure */
+.adventure-box {
+    border: 2px solid var(--secondary-color);
+    padding: 6px;
+    margin-top: 0px;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    /* leve contraste */
+}
+
+/* Galeria Adventure Awaits responsiva */
 .about-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0rem;
 }
 
 .about-gallery img {
-    flex: 1 1 150px;
-    max-width: 100%;
+    width: 150px;
     height: auto;
     border-radius: 6px;
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.2);
 }
