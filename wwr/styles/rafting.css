@@ -34,6 +34,32 @@ footer {
     margin: 0 auto;
 }
 
+/* Header em Grid */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    /* logo + nav */
+    align-items: center;
+    padding: 12px 0;
+}
+
+header img {
+    max-width: 120px;
+}
+
+/* Nav em Flex */
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Cabeçalhos */
 h1,
 h2 {
@@ -46,31 +72,8 @@ section h2 {
     text-align: center;
     margin-bottom: 12px;
     background-color: var(--accent2-color);
-    /* usa a variável */
     padding: 6px;
     border-radius: 4px;
-}
-
-/* Margens básicas */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Links sociais */
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* Ícones sociais pequenos */
-.socialmedia img {
-    width: 24px;
-    height: 24px;
-    margin: 0 6px;
-    vertical-align: middle;
 }
 
 /* Hero Section */
@@ -122,28 +125,53 @@ article {
     margin-top: 16px;
     border-radius: 8px;
     background-color: #fdfdfd;
-    /* leve contraste */
 }
 
 /* Galeria Adventure Awaits em linha horizontal */
 .about-gallery {
     display: flex;
-    flex-wrap: nowrap;
-    /* impede quebra para baixo */
     justify-content: center;
-    /* centraliza na largura */
-    gap: 8px;
-    /* espaço uniforme entre imagens */
+    gap: 12px;
 }
 
-/* Imagens padronizada1 */
+/* Figures padronizados */
+.about-gallery figure {
+    text-align: center;
+}
+
 .about-gallery img {
     width: 150px;
-    /* largura fixa */
     height: 100px;
-    /* altura fixa */
     object-fit: cover;
-    /* corta proporcionalmentes sem distorcer */
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about-gallery figcaption {
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: var(--accent1-color);
+}
+
+/* Footer alinhado à direita */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+footer nav.socialmedia img {
+    width: 24px;
+    height: 24px;
 }
