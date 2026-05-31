@@ -71,7 +71,8 @@ nav a:hover {
     text-align: center;
     color: var(--light-color);
     font-size: 3rem;
-    text-shadow: 2px 2px 8px var(--dark-color);
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
 }
 
 .hero article {
