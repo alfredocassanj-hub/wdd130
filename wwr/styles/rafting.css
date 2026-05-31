@@ -3,9 +3,15 @@
     --secondary-color: #0077cc;
     --dark-color: #333333;
     --light-color: #ffffff;
+
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --radius: 10px;
 }
 
-* {
+/* RESET */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,20 +29,20 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    /* logo à esquerda, nav à direita */
     align-items: center;
     background-color: var(--primary-color);
-    padding: 20px;
+    padding: 15px 30px;
+    box-shadow: var(--shadow);
 }
 
 header img {
     width: 100px;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -44,15 +50,17 @@ nav a {
     text-decoration: none;
     color: var(--dark-color);
     font-weight: bold;
-    padding: 10px;
-    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--light-color);
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     position: relative;
     margin: 20px;
@@ -64,25 +72,35 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* ✅ CORREÇÃO DEFINITIVA DO H1 (ACESSIBILIDADE) */
 .hero h1 {
     position: absolute;
     top: 30px;
     width: 100%;
     text-align: center;
-    color: var(--light-color);
+
+    color: #ffffff;
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    display: inline-block;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
+/* HERO ARTICLE */
 .hero article {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    background-color: rgba(255, 255, 255, 0.85);
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 .hero article img {
@@ -92,11 +110,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* HISTORY SECTION */
+/* HISTORY */
 .history {
     padding: 40px 20px;
-    border: 2px solid var(--dark-color);
-    border-radius: 8px;
+    border-radius: var(--radius);
     background-color: rgba(216, 200, 240, 0.2);
 }
 
@@ -118,11 +135,10 @@ nav a:hover {
     border-radius: 10px;
 }
 
-/* ADVENTURES SECTION */
+/* ADVENTURES */
 .adventures {
     padding: 40px 20px;
-    border: 2px solid var(--dark-color);
-    border-radius: 8px;
+    border-radius: var(--radius);
     background-color: rgba(216, 200, 240, 0.2);
 }
 
@@ -134,13 +150,13 @@ nav a:hover {
 
 .adventure-gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .adventure-gallery figure {
-    flex: 1;
+    flex: 1 1 180px;
     text-align: center;
 }
 
@@ -161,11 +177,11 @@ figcaption {
 footer {
     display: flex;
     justify-content: space-between;
-    /* copyright à esquerda, redes à direita */
     align-items: center;
     background-color: var(--primary-color);
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
+    box-shadow: var(--shadow);
 }
 
 footer p {
@@ -181,13 +197,17 @@ footer p {
 
 .socialmedia::before {
     content: "Redes Sociais:";
-    /* texto antes dos ícones */
     font-weight: bold;
     margin-right: 10px;
 }
 
 .socialmedia a {
     text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.1);
 }
 
 .socialmedia img {
