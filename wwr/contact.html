@@ -10,6 +10,8 @@
     <meta name="description"
       content="Contact White Water Rafting for reservations, questions, suggestions, and information about our rafting adventures.">
 
+    <meta name="author" content="Alfredo Cassanje">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -29,7 +31,7 @@
     <main>
 
         <section class="contact-info">
-            <h1>Contact Us</h1>
+            <h1>Contact White Water Rafting</h1>
 
             <div class="contact-details">
                 <p><strong>Address:</strong> 123 River Road, Adventure City</p>
@@ -55,7 +57,7 @@
 
                 <figure>
                     <img src="images/employees2.jpg" alt="Safety Instructor">
-                    <figcaption>Alfredo Cassanje- Safety Instructor</figcaption>
+                    <figcaption>Alfredo Cassanje - Safety Instructor</figcaption>
                 </figure>
 
                 <figure>
@@ -80,27 +82,22 @@
                 <fieldset>
                     <legend>Purpose of Message</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+
                 </fieldset>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
 
-                <label class="checkbox-group">
-                    <input type="checkbox" name="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
 
@@ -116,7 +113,7 @@
     <footer>
         <p>&copy; 2026 White Water Rafting | Alfredo Cassanje</p>
 
-        <div class="socialmedia">
+        <nav class="socialmedia">
             <a href="#">
                 <img src="images/facebook.png" alt="Facebook">
             </a>
@@ -126,9 +123,9 @@
             </a>
 
             <a href="#">
-                <img src="images/twitter.png" alt="twitter">
+                <img src="images/twitter.png" alt="Twitter">
             </a>
-        </div>
+        </nav>
     </footer>
 
 </body>
