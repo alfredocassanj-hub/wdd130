@@ -1,143 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="description"
-      content="Contact White Water Rafting for reservations, questions, or suggestions.">
-
-    <!-- ✅ FIX: author (OBRIGATÓRIO) -->
-    <meta name="author" content="Alfredo Cassanje">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us | White Water Rafting</title>
 
-    <!-- CSS correto -->
+    <meta name="description"
+      content="Contact White Water Rafting for reservations, questions, suggestions, and information about our rafting adventures.">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <div class="page-wrapper">
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Logo">
 
-        <!-- HEADER -->
-        <header>
-            <img src="images/logo.png" alt="Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </header>
+    <main>
 
-        <!-- MAIN -->
-        <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
 
-            <!-- COMPANY INFO -->
-            <section class="company-info">
-                <h1>White Water Rafting Company</h1>
-                <p>123 Main River Street</p>
-                <p>Kolob, California</p>
-                <p>+1 999 999 9999</p>
-                <p>info@whitewater.com</p>
-            </section>
+            <div class="contact-details">
+                <p><strong>Address:</strong> 123 River Road, Adventure City</p>
+                <p><strong>Phone:</strong> +244 900 000 000</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            </div>
 
-            <!-- CONTACT -->
-            <section class="contact-container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=" loading="lazy" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
 
-                <!-- MAP -->
-                <div class="map">
-                    <iframe src="https://www.google.com/maps?q=Kolob,Utah&output=embed"
-                      loading="lazy">
-                    </iframe>
-                </div>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
 
-                <!-- FORM (FIX COMPLETO) -->
-                <form class="contact-form">
+            <div class="employees-gallery">
 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                <figure>
+                    <img src="images/employees1.jpg" alt="Operations Manager">
+                    <figcaption>Eunice Paquete - Operations Manager</figcaption>
+                </figure>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <figure>
+                    <img src="images/employees2.jpg" alt="Safety Instructor">
+                    <figcaption>Alfredo Cassanje- Safety Instructor</figcaption>
+                </figure>
 
-                    <p>Message Purpose</p>
+                <figure>
+                    <img src="images/employees3.jpg" alt="Senior Rafting Guide">
+                    <figcaption>Emily Davis - Senior Rafting Guide</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
 
                     <label>
-                        <input type="radio" id="general" name="purpose">
+                        <input type="radio" name="purpose" value="general" required>
                         General Inquiry
                     </label>
 
                     <label>
-                        <input type="radio" id="reservation" name="purpose">
+                        <input type="radio" name="purpose" value="reservation">
                         Reservation Question
                     </label>
 
                     <label>
-                        <input type="radio" id="website" name="purpose">
+                        <input type="radio" name="purpose" value="suggestion">
                         Website Suggestion
                     </label>
+                </fieldset>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
 
-                    <label>
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        Please subscribe me to the monthly newsletter
-                    </label>
+                <label class="checkbox-group">
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
 
-                    <button type="submit">Get in Touch!</button>
+                <button type="submit">
+                    Send Message
+                </button>
 
-                </form>
+            </form>
+        </section>
 
-            </section>
+    </main>
 
-            <!-- TEAM -->
-            <section class="team">
+    <footer>
+        <p>&copy; 2026 White Water Rafting | Alfredo Cassanje</p>
 
-                <h2>We Are Here to Serve You</h2>
+        <div class="socialmedia">
+            <a href="#">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
 
-                <div class="team-container">
+            <a href="#">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
 
-                    <figure>
-                        <img src="images/employees1.jpg" alt="Manager">
-                        <figcaption>John Smith - Manager</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/employees2.jpg" alt="Guide">
-                        <figcaption>Mary Johnson - River Guide</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/employees3.jpg" alt="Support">
-                        <figcaption>David Lee - Support Staff</figcaption>
-                    </figure>
-
-                </div>
-
-            </section>
-
-        </main>
-
-        <!-- FOOTER (FIX  FINAL) -->
-        <footer>
-
-            <p>© 2026 White Water Rafting - Alfredo Cassanje</p>
-
-            <nav class="socialmedia">
-                <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
-                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            </nav>
-
-        </footer>
-
-    </div>
+            <a href="#">
+                <img src="images/twitter.png" alt="twitter">
+            </a>
+        </div>
+    </footer>
 
 </body>
 
